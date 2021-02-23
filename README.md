@@ -1,5 +1,5 @@
 # Real time sudoku solver
-<img src="./img/screenshots.png" hspace="20%" width="40%" />
+<img src="./img/screenshots.png" width="50%" />
 
 A real Time soduku solver using Opencv and RosePy
 - TODO:
