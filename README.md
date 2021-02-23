@@ -1,6 +1,4 @@
 # Real time sudoku solver
-Simple light weight library
-
 <p float="center">
   <img src="./img/rob1.png" width="75" />
   <img src="./img/rob2.png" width="75" /> 
@@ -8,7 +6,7 @@ Simple light weight library
 </p>
 
 
-- A real Time soduku solver using Opencv and RosePy
+A real Time soduku solver using Opencv and RosePy
 - TODO:
  - Clean up pre processing
  - save weights from RosePy
