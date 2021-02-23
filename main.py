@@ -2,12 +2,12 @@ import cv2
 import operator
 import numpy as np
 
-from lily import *
+from ANN import *
 from solver import *
 
 
 # -- initalising ML  --------------------------
-shape = [784,30,10]          
+shape = [784,128,10]          
 net = ANN( shape ) 
 #net.load('Params/params_900.pickle')
 #train_net()
@@ -119,17 +119,16 @@ if __name__ == '__main__':
           img = cv2.resize(image,(28,28))
 
           ###########################################################
-          img = img.reshape((784,1))
+          #img = img.reshape((784,1))
+          img = img.reshape((1,784))
           pixel_sum = np.sum(img)
           pixels_sum.append(pixel_sum)
 
-          out = net.forward(img)
+          #  model training
+          pred = net.forward(img)
+          pred = net.soft_loss.forward(pred)               
 
-          #softmax
-          e_x = np.exp(out - np.max(out))    # softmax numerator
-          out = e_x / e_x.sum()              # softmax denominator
-
-          predicted_digit = np.argmax(out)
+          predicted_digit = np.argmax(pred)
           #print(predicted_digit, end='\r')
 
           ###########################################################
