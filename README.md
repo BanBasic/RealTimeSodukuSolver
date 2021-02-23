@@ -1,10 +1,10 @@
 # Real time sudoku solver
 Simple light weight library
 
-<p float="middle">
-  <img src="./img/logo1.png" width="75" />
-  <img src="./img/logo2.png" width="75" /> 
-  <img src="./img/logo3.png" width="75" />
+<p float="center">
+  <img src="./img/rob1.png" width="75" />
+  <img src="./img/rob2.png" width="75" /> 
+  <img src="./img/rob3.png" width="75" />
 </p>
 
 
